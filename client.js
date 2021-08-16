@@ -7,14 +7,12 @@ const connect = function() {
     port: PORT
   });
 
-  // interpret incoming data as text
-  conn.setEncoding('utf8');
+  conn.setEncoding('utf8');   // interpret incoming data as text
   conn.on('connect', () => {
-    console.log('game-start');
+    console.log('Connected!');
     conn.write('Name: BDL');
   });
   return conn;
-
 };
 
 module.exports = { connect };
