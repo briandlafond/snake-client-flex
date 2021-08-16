@@ -9,27 +9,27 @@ const setupInput = function(conn) {
   const handleUserInput = function() {
     stdin.on('data', (key) => { //allows for key entry input from user
       if (key === 'w') {
-        conn.write('Move: up')
+        conn.write('Move: up');
       }
       if (key === 'a') {
-        conn.write('Move: left')
+        conn.write('Move: left');
       }
       if (key === 's') {
-        conn.write('Move: down')
+        conn.write('Move: down');
       }
       if (key === 'd') {
         conn.write('Move: right');
       }
       if (key === 'q') {
-        conn.write('Say: Whats up!!')
+        conn.write('Say: Whats up!!');
       }
-      if (key === '\u0003') { // u0003 maps to control+c 
+      if (key === '\u0003') { // u0003 maps to control+c
         process.exit(); // quit the process of running client.js
       }
     });
-  }
-  handleUserInput()
+  };
+  handleUserInput();
   return stdin;
-}
+};
 
 module.exports = { setupInput };
