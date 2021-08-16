@@ -5,12 +5,15 @@ const connect = function() {
     host: 'localhost',
     port: 50541
   });
+
   // interpret incoming data as text
   conn.setEncoding('utf8'); 
   conn.on('connect', () => {
     console.log('game-start')
+    conn.write('Name: BDL');
   });
   return conn;
+  
 };
 
 module.exports = { connect };
