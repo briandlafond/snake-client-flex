@@ -14,9 +14,8 @@ Before you can run this client, you will need to be running the server side whic
 
 -Have fun! use keys..
 
-w -> Move up
-a -> Move left
-s -> Move down
-d -> Move right
-
-q -> for a surprise message!
+- w -> Move up
+- a -> Move left
+- s -> Move down
+- d -> Move right
+- q -> for a surprise message!
